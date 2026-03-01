@@ -5,7 +5,7 @@ import NorthStar from "@/components/NorthStar";
 import Founder from "@/components/Founder";
 import Solution from "@/components/Solution";
 import Methodology from "@/components/Methodology";
-import LucaSection from "@/components/LucaSection";
+import Pathways from "@/components/Pathways";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
       <Founder />
       <Solution />
       <Methodology />
-      <LucaSection />
+      <Pathways />
     </main>
   );
 }
