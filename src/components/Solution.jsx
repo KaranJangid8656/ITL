@@ -43,7 +43,7 @@ export default function Solution() {
                     {/* Column 1 - ITL Approach */}
                     <div className="relative flex flex-col items-start md:items-center text-left md:text-center group pr-8 md:pr-0 self-end pb-12">
                         {/* Number Background */}
-                        <div className="absolute left-[-2rem] md:left-1/2 md:-translate-x-[120%] top-[-2rem] md:top-[-1rem] text-[160px] leading-none font-serif font-light text-transparent bg-clip-text bg-gradient-to-b from-white/30 to-transparent -z-10 select-none">
+                        <div className="absolute left-[-2rem] md:left-auto md:right-[calc(50%+180px)] md:translate-x-0 top-[-2rem] md:top-[-1rem] text-[160px] leading-none font-serif font-light text-transparent bg-clip-text bg-gradient-to-b from-white/80 to-white/20 z-0 select-none pointer-events-none">
                             1
                         </div>
                         <h3 className="font-serif text-[28px] text-white tracking-wide mb-4">
@@ -60,7 +60,7 @@ export default function Solution() {
                     {/* Column 2 - Our Ecosystem (Offset vertically) */}
                     <div className="relative flex flex-col items-start md:items-center text-left md:text-center group pr-8 md:pr-0 self-start md:-translate-y-24 mb-16 md:mb-0">
                         {/* Number Background */}
-                        <div className="absolute left-[-2rem] md:left-1/2 md:-translate-x-[140%] top-[-3rem] md:top-[-2rem] text-[180px] leading-none font-serif font-light text-transparent bg-clip-text bg-gradient-to-b from-white/30 to-white/5 -z-10 select-none">
+                        <div className="absolute left-[-2rem] md:left-auto md:right-[calc(50%+180px)] md:translate-x-0 top-[-3rem] md:top-[-2rem] text-[180px] leading-none font-serif font-light text-transparent bg-clip-text bg-gradient-to-b from-white/80 to-white/20 z-0 select-none pointer-events-none">
                             2
                         </div>
                         <h3 className="font-serif text-[28px] text-white tracking-wide mb-4">
@@ -78,7 +78,7 @@ export default function Solution() {
                     {/* Column 3 - Global Impact */}
                     <div className="relative flex flex-col items-start md:items-center text-left md:text-center group pr-8 md:pr-0 self-end pb-12">
                         {/* Number Background */}
-                        <div className="absolute left-[-2rem] md:left-1/2 md:-translate-x-[130%] top-[-2rem] md:top-[-1rem] text-[160px] leading-none font-serif font-light text-transparent bg-clip-text bg-gradient-to-b from-white/30 to-transparent -z-10 select-none">
+                        <div className="absolute left-[-2rem] md:left-auto md:right-[calc(50%+180px)] md:translate-x-0 top-[-2rem] md:top-[-1rem] text-[160px] leading-none font-serif font-light text-transparent bg-clip-text bg-gradient-to-b from-white/80 to-white/20 z-0 select-none pointer-events-none">
                             3
                         </div>
                         <h3 className="font-serif text-[28px] text-white tracking-wide mb-4">
