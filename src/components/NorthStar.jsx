@@ -2,7 +2,9 @@ import { Eye, Target, Trophy } from 'lucide-react';
 
 export default function NorthStar() {
     return (
-        <section className="relative min-h-[90vh] flex items-center py-20 px-6 overflow-hidden mt-12 bg-transparent z-10 border-t border-white/5">
+        <section className="relative min-h-[90vh] flex items-center py-20 px-6 overflow-hidden mt-12 z-10">
+            {/* Teal background for top left area */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#0a7d75] via-transparent to-transparent opacity-30 pointer-events-none"></div>
             <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 items-center pl-8 lg:pl-[120px]">
 
                 {/* Left Side - Interactive Graphic */}
@@ -75,6 +77,8 @@ export default function NorthStar() {
                 </div>
 
             </div>
+            {/* Black gradient shade at the bottom */}
+            <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-black to-transparent pointer-events-none z-20" />
         </section>
     );
 }

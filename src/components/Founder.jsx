@@ -3,12 +3,12 @@ import Image from 'next/image';
 
 export default function Founder() {
     return (
-        <section className="relative min-h-[90vh] bg-[#020b06] border-t border-white/5 z-10 flex flex-col">
+        <section className="relative min-h-[90vh] bg-[#020b06] z-10 flex flex-col">
             {/* 2x2 Grid Layout container */}
             <div className="w-full grid grid-cols-1 md:grid-cols-2 flex-grow">
 
                 {/* Top Left Quadrant - Headline */}
-                <div className="relative min-h-[400px] lg:min-h-[480px] flex flex-col justify-center px-8 lg:px-16 xl:pl-[calc(50vw-650px)] pr-8 xl:pr-16 border-b border-white/5 md:border-r bg-gradient-to-br from-transparent to-[#052014]/30">
+                <div className="relative min-h-[400px] lg:min-h-[480px] flex flex-col justify-center px-8 lg:px-16 xl:pl-[calc(50vw-650px)] pr-8 xl:pr-16 bg-gradient-to-br from-transparent to-[#052014]/30">
                     <div className="max-w-[500px] ml-auto md:mr-0 w-full lg:pt-16">
                         {/* Badge */}
                         <div className="flex items-center gap-2 mb-8 ml-1">
@@ -19,19 +19,19 @@ export default function Founder() {
                         </div>
 
                         {/* Headline */}
-                        <h2 className="font-serif text-[48px] md:text-[60px] lg:text-[72px] text-white leading-[1.05] tracking-tight">
+                        <h2 className="font-serif text-[32px] md:text-[42px] lg:text-[52px] text-white leading-[1.05] tracking-tight">
                             Leslie Martinich
                         </h2>
                     </div>
                 </div>
 
                 {/* Top Right Quadrant - Image */}
-                <div className="relative min-h-[400px] lg:min-h-[480px] border-b border-white/5 overflow-hidden group">
+                <div className="relative min-h-[400px] lg:min-h-[480px] overflow-hidden group">
                     <Image
-                        src="https://res.cloudinary.com/dx9bvma03/image/upload/v1772345745/Screenshot_2026-03-01_114353_jydlsh.png"
+                        src="/founder.png"
                         alt="Leslie Martinich"
                         fill
-                        className="object-cover object-center relative z-0 transition-transform duration-700 ease-in-out group-hover:scale-105"
+                        className="object-cover object-center relative z-0"
                     />
                     {/* Dark gradient overlays to blend the image seamlessly into the surrounding dark theme */}
                     <div className="absolute inset-0 bg-gradient-to-r from-[#020b06] via-[#020b06]/40 to-transparent z-10 w-1/2"></div>
@@ -40,7 +40,8 @@ export default function Founder() {
                 </div>
 
                 {/* Bottom Left Quadrant - Bio */}
-                <div className="relative min-h-[400px] lg:min-h-[480px] flex flex-col justify-center px-8 lg:px-16 xl:pl-[calc(50vw-650px)] pr-8 xl:pr-16 md:border-r border-white/5 bg-gradient-to-tr from-[#052014]/40 to-transparent">
+                <div className="relative min-h-[400px] lg:min-h-[480px] flex flex-col justify-center px-8 lg:px-16 xl:pl-[calc(50vw-650px)] pr-8 xl:pr-16 overflow-hidden" style={{ background: 'radial-gradient(circle at 0% 100%, #08605c 0%, transparent 80%), radial-gradient(circle at 60% 0%, #08605c 0%, transparent 70%), #020b06' }}>
+
                     <div className="max-w-[500px] ml-auto md:mr-0 w-full py-16">
                         <p className="font-sans text-[20px] text-[#e5e7eb] leading-relaxed font-normal mb-8 drop-shadow-md">
                             Leslie Martinich is a leadership expert with 20+ years of experience who founded the Institute of Trusted Leadership to address the global crisis of trust in organizations.
@@ -52,19 +53,20 @@ export default function Founder() {
                 </div>
 
                 {/* Bottom Right Quadrant - CTA */}
-                <div className="relative min-h-[300px] lg:min-h-[480px] flex items-center px-8 lg:px-20 bg-gradient-to-br from-[#083c24]/40 to-[#08605c]/30">
-                    <a href="#" className="flex items-center gap-4 group cursor-pointer w-fit pb-12 md:pb-0 lg:mb-16">
-                        <span className="font-serif text-[46px] lg:text-[52px] text-white tracking-wide group-hover:text-white/80 transition-colors">
+                <div className="relative min-h-[300px] lg:min-h-[480px] flex items-start pt-16 px-4 lg:px-10 overflow-hidden" style={{ background: 'radial-gradient(circle at 100% 100%, #08605c 0%, transparent 80%), radial-gradient(circle at 20% 0%, #08605c 0%, transparent 70%), #020b06' }}>
+
+                    <a href="#" className="flex items-center gap-3 group cursor-pointer w-fit">
+                        <span className="font-serif text-[34px] lg:text-[40px] text-white tracking-wide group-hover:text-white/80 transition-colors">
                             Meet Leslie
                         </span>
-                        <ArrowUpRight className="w-12 h-12 text-white font-light group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-300" strokeWidth={1} />
+                        <ArrowUpRight className="w-9 h-9 text-white font-light group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-300" strokeWidth={1} />
                     </a>
                 </div>
 
             </div>
 
             {/* Bottom Number Navigation Section */}
-            <div className="w-full flex items-center justify-center py-8 border-t border-white/10 bg-[#051810]">
+            <div className="w-full flex items-center justify-center py-8 bg-[#051810]">
                 <div className="flex items-center gap-6 md:gap-8 w-max">
                     {/* Item 01 */}
                     <div className="flex items-center gap-6 md:gap-8">

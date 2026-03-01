@@ -1,6 +1,6 @@
 export default function Methodology() {
     return (
-        <section className="relative min-h-[140vh] bg-[#020b06] flex flex-col pt-32 pb-48 px-6 overflow-hidden z-10 border-t border-white/5">
+        <section className="relative min-h-[140vh] bg-[#020b06] flex flex-col pt-32 pb-48 px-6 overflow-hidden z-10">
             {/* Background Gradients - Transitioning from dark green to dark navy blue */}
             <div className="absolute inset-0 bg-gradient-to-b from-[#020b06] via-[#041118] to-[#011428] pointer-events-none"></div>
 
