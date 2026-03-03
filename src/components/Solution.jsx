@@ -1,6 +1,6 @@
 export default function Solution() {
     return (
-        <section className="relative min-h-screen bg-[#020905] flex flex-col justify-center py-20 sm:py-32 px-6 overflow-hidden z-10">
+        <section id="solution" className="relative min-h-screen bg-[#020905] flex flex-col justify-center py-20 sm:py-32 px-6 overflow-hidden z-10">
             {/* Background Gradients */}
             <div className="absolute inset-0 bg-gradient-to-b from-[#06331e]/40 via-[#020b06] to-[#020905] pointer-events-none"></div>
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[500px] bg-[#117a47] rounded-full blur-[150px] opacity-10 pointer-events-none"></div>

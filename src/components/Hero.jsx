@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <section className="relative min-h-[85vh] flex items-center pt-28 sm:pt-32 pb-20 px-6">
+        <section id="hero" className="relative min-h-[85vh] flex items-center pt-28 sm:pt-32 pb-20 px-6">
             <div className="max-w-[1400px] mx-auto w-full flex flex-col justify-center">
 
                 {/* Content Container */}

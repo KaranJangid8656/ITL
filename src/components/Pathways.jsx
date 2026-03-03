@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export default function Pathways() {
     return (
-        <section className="relative min-h-screen bg-[#020b06] flex flex-col pt-20 sm:pt-32 pb-24 sm:pb-48 px-4 sm:px-6 lg:px-12 xl:px-24 overflow-hidden z-10">
+        <section id="pathways" className="relative min-h-screen bg-[#020b06] flex flex-col pt-20 sm:pt-32 pb-24 sm:pb-48 px-4 sm:px-6 lg:px-12 xl:px-24 overflow-hidden z-10">
             {/* Background Gradients */}
             <div className="absolute inset-0 bg-gradient-to-b from-[#011428] via-[#02182b] to-[#020b06] pointer-events-none"></div>
 

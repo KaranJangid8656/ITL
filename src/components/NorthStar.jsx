@@ -29,7 +29,7 @@ export default function NorthStar() {
     const slide = slides[active];
 
     return (
-        <section className="relative min-h-screen flex items-center py-16 sm:py-20 px-6 overflow-hidden mt-6 sm:mt-12 z-10">
+        <section id="northstar" className="relative min-h-screen flex items-center py-16 sm:py-20 px-6 overflow-hidden mt-6 sm:mt-12 z-10">
             {/* Teal background for top left area */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#0a7d75] via-transparent to-transparent opacity-30 pointer-events-none"></div>
 

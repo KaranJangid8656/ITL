@@ -1,6 +1,6 @@
 export default function Methodology() {
     return (
-        <section className="relative bg-[#020b06] flex flex-col pt-20 sm:pt-32 pb-24 sm:pb-48 px-6 overflow-hidden z-10">
+        <section id="methodology" className="relative bg-[#020b06] flex flex-col pt-20 sm:pt-32 pb-24 sm:pb-48 px-6 overflow-hidden z-10">
             {/* Background Gradients */}
             <div className="absolute inset-0 bg-gradient-to-b from-[#020b06] via-[#041118] to-[#011428] pointer-events-none"></div>
 

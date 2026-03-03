@@ -7,6 +7,23 @@ import { Menu, X } from 'lucide-react';
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    // Scroll to section by id
+    const handleScroll = (id) => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    // Responsive navigation items
+    const navItems = [
+        { label: 'The Institute', id: 'northstar' },
+        { label: 'Our Approach', id: 'methodology' },
+        { label: 'Ecosystem', id: 'pathways' },
+        { label: 'Insights', id: 'solution' },
+        { label: 'Contact Us', id: 'founder' },
+    ];
+
     return (
         <header className="absolute top-0 w-full z-50">
             <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-[160px] py-6 sm:py-8 flex justify-between items-center">
@@ -21,11 +38,16 @@ export default function Header() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-8 lg:gap-12 font-sans text-[14px] lg:text-[15px] tracking-wide text-white/70">
-                    <Link href="#" className="text-white font-medium hover:text-white/80 transition-colors">The Institute</Link>
-                    <Link href="#" className="hover:text-white transition-colors">Our Approach</Link>
-                    <Link href="#" className="hover:text-white transition-colors">Ecosystem</Link>
-                    <Link href="#" className="hover:text-white transition-colors">Insights</Link>
-                    <Link href="#" className="hover:text-white transition-colors">Contact Us</Link>
+                    {navItems.map((item) => (
+                        <button
+                            key={item.id}
+                            className={`hover:text-white transition-colors ${item.label === 'The Institute' ? 'text-white font-medium' : ''}`}
+                            style={{ background: 'none', border: 'none', padding: 0, margin: 0, cursor: 'pointer' }}
+                            onClick={() => handleScroll(item.id)}
+                        >
+                            {item.label}
+                        </button>
+                    ))}
                 </nav>
 
                 {/* Mobile Hamburger */}
@@ -47,11 +69,16 @@ export default function Header() {
             {menuOpen && (
                 <div className="md:hidden absolute top-full left-0 w-full bg-black/90 backdrop-blur-sm border-t border-white/10 z-50">
                     <nav className="flex flex-col px-6 py-4 gap-4 font-sans text-[15px] tracking-wide text-white/70">
-                        <Link href="#" className="text-white font-medium py-2 border-b border-white/10" onClick={() => setMenuOpen(false)}>The Institute</Link>
-                        <Link href="#" className="hover:text-white transition-colors py-2 border-b border-white/10" onClick={() => setMenuOpen(false)}>Our Approach</Link>
-                        <Link href="#" className="hover:text-white transition-colors py-2 border-b border-white/10" onClick={() => setMenuOpen(false)}>Ecosystem</Link>
-                        <Link href="#" className="hover:text-white transition-colors py-2 border-b border-white/10" onClick={() => setMenuOpen(false)}>Insights</Link>
-                        <Link href="#" className="hover:text-white transition-colors py-2" onClick={() => setMenuOpen(false)}>Contact Us</Link>
+                        {navItems.map((item) => (
+                            <button
+                                key={item.id}
+                                className={`py-2 border-b border-white/10 ${item.label === 'The Institute' ? 'text-white font-medium' : 'hover:text-white transition-colors'}`}
+                                style={{ background: 'none', border: 'none', padding: 0, margin: 0, textAlign: 'left', cursor: 'pointer' }}
+                                onClick={() => { handleScroll(item.id); setMenuOpen(false); }}
+                            >
+                                {item.label}
+                            </button>
+                        ))}
                     </nav>
                 </div>
             )}

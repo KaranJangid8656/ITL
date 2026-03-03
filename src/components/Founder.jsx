@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Founder() {
     return (
-        <section className="relative min-h-[90vh] bg-[#020b06] z-10 flex flex-col">
+        <section id="founder" className="relative min-h-[90vh] bg-[#020b06] z-10 flex flex-col">
             {/* 2x2 Grid Layout container */}
             <div className="w-full grid grid-cols-1 md:grid-cols-2 flex-grow">
 
